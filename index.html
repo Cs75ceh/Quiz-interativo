@@ -1,22 +1,199 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Quiz | Provão do Harry Potter</title>
+</head>
+<body>
+  <div class="intro py-3 bg-danger text-center">
+    <div class="container">
+      <h2 class="text-light display-3 my-4">Quiz</h2>
+    </div>
+  </div>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <div class="quiz py-4 bg-dark">
+    <div class="container">
+      <h2 class="my-5 text-warning text-center">Vamos ver se você realmente é Potterhead!</h2>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+      <form class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. A qual feitiço Harry sobreviveu ?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="1" checked>
+              Petrificus Totalus
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="2">
+              Expelliarmus
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="3">
+              Cruciatus
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="4">
+              Avada Kedavra
+            </label>
+          </div>
+        </div>
 
-  </body>
-</html>     
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. Qual foi a poção usada pelo trio de ouro no filme 'Harry Potter e a Câmara Secreta' ?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="1" checked>
+              Polisuco
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="2">
+              Poção de Regeneração
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="3">
+              Poção de Morto Vivo
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="4">
+              Felix Felicius
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. Qual é o nome da Fênix do Dumbledore ?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="1" checked>
+              Biguço
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="2">
+              Perebas
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="3">
+              Edwiges
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="4">
+              Fawkes
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. Qual é o apelido dos Marotos ?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="1" checked>
+              Pedro, Hagrid, Aluado, Arthur.
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="2">
+              Rabicho, Sirius, Pontas, Hagrid.
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="3">
+              Nenhuma das alternativas.
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="4">
+              Aluado, Rabicho, Almofadinhas, Pontas.
+            </label>
+          </div>
+        </div>
+        
+        <div class="my-5">
+          <p class="lead font-weight-normal">5. No minimo, quantos anos eram necessários para participar do torneio tribuxo ?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="1" checked>
+              17
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="2">
+              09
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="3">
+              13
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="4">
+              15
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">6. Onde aconteceu a 2a tarefa do torneio tribuxo ?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="1" checked>
+              Sala precisa
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="2">
+              Lago Negro
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="3">
+              Labirinto
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion6" value="4">
+              Salão Principal
+            </label>
+          </div>
+        </div>
+
+
+        <div class="text-center">
+          <button class="btn bg-primary text-light">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
