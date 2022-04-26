@@ -16,7 +16,6 @@ form.addEventListener('submit', event => {
     let score = 0
     const increment = 100 / 6 
     userAnswers.forEach((userAnswer, index) => {
-        console.log(userAnswer, correctAnswers[index])
         
         if (Number(userAnswer) === correctAnswers[index]) {
             score = score + increment 
