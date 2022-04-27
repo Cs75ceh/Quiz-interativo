@@ -1,4 +1,6 @@
 const form = document.querySelector('.quiz-form')
+const button = document.querySelector('button')
+const h3 = document.createElement('h3');
 
 const correctAnswers = [4, 1, 4, 4, 1,2]
 
@@ -21,5 +23,12 @@ form.addEventListener('submit', event => {
             score = score + increment 
         }
     });
-    console.log('Score : ', score)
+
+    if (document.querySelector('h3')) {
+        h3.remove()
+    }
+    
+    const containerMessage = button.insertAdjacentElement('afterend', h3)
+    h3.setAttribute('class','my-5 text-warning text-center')
+    containerMessage.textContent = `Score : ${score}`
 })
